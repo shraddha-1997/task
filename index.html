@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles1.css"> 
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-light bg-light px-3">
+    <div class="container-fluid">
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link active" href="#">My Tasks</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Track Tasks</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">All Tasks</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Form View</a></li>
+        </ul>
+        <a href="index2.html">
+            <button class="btn btn-primary">Add Task</button>
+        </a>
+        
+    </div>
+</nav>
+
+<!-- Task Filters -->
+<div class="container mt-3">
+    <div class="d-flex gap-2">
+        <button class="btn btn-outline-dark">Total <span class="badge bg-secondary">4</span></button>
+        <button class="btn btn-outline-dark">Open <span class="badge bg-secondary">2</span></button>
+        <button class="btn btn-outline-dark">Completed <span class="badge bg-secondary">2</span></button>
+    </div>
+</div>
+<!-- Task Table -->
+<div class="container mt-4">
+    <table id="taskTable" class="table table-hover">
+        <thead>
+            <tr class="table-light">
+                <th>Task Details</th>
+                <th>Assigned To</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ✅ JavaScript will dynamically insert rows here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- ✅ Link to script.js for data fetching -->
+<script src="script.js"></script>
+
+
+</body>
+</html>

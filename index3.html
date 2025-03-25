@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <!-- 🔹 Fixed Header Structure -->
+        <!-- 🔹 Fixed Header Structure -->
+        <div class="task-header p-3 d-flex justify-content-between align-items-center"
+            style="background-color: #f1f3f5; border-radius: 5px;">
+            <div>
+                <h6 class="mb-0" id="taskName">Task </h6>
+                <small>Initiated By <span id="initiatedBy">Pooja Kulkarni</span></small>
+            </div>
+            <div>
+                <i class='fas fa-pencil-alt edit-icon'></i>
+                <button class="btn btn-light btn-sm">✖</button> <!-- Close button on right -->
+            </div>
+        </div>
+
+        <div class="task-owner p-3 mt-2 d-flex justify-content-between align-items-center"
+            style="background-color: #e6f2ff; border-radius: 5px;">
+            <div class="d-flex flex-column"> <!-- ✅ Added flex-column to stack elements vertically -->
+                <div>Task Owner</div> <!-- ✅ This will be on top -->
+                <div class="d-flex align-items-center">
+                    <div class="profile-pic me-2" id="taskOwnerPic"></div>
+                    <span id="taskOwnerName"></span>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="me-3">
+                    <strong>Due Date</strong><br><span id="taskDueDate">Loading...</span>
+                </div>
+                <div>
+                    <strong>Status</strong><br><span id="taskStatus">Loading...</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Task Details -->
+        <div class="task-details mt-2 pt-2">
+            <h6 class="fw-bold">Task Details</h6>
+            <form id="updateForm">
+                <table class="table">
+                    <tbody>
+                        <!-- Task Owner -->
+                        <tr>
+                            <td><strong>Task owner</strong></td>
+                            <td><input type="text" id="task_owner" name="task_owner" class="form-control"></td>
+                        </tr>
+
+                        <!-- Task Name -->
+                        <tr>
+                            <td><strong>Task name</strong></td>
+                            <td><input type="text" id="task_name" name="task_name" class="form-control"></td>
+                        </tr>
+
+                        <!-- Description -->
+                        <tr>
+                            <td><strong>Description</strong></td>
+                            <td><textarea id="description" name="description" class="form-control"></textarea></td>
+                        </tr>
+
+                        <!-- Start Date -->
+                        <tr>
+                            <td><strong>Start Date</strong></td>
+                            <td><input type="date" id="start_date" name="start_date" class="form-control"></td>
+                        </tr>
+
+                        <!-- Due Date -->
+                        <tr>
+                            <td><strong>Due Date</strong></td>
+                            <td><input type="date" id="due_date" name="due_date" class="form-control"></td>
+                        </tr>
+
+                        <!-- Reminder -->
+                        <tr>
+                            <td><strong>Reminder</strong></td>
+                            <td><input type="datetime-local" id="reminder" name="reminder" class="form-control"></td>
+                        </tr>
+                        <!-- Priority -->
+                        <tr>
+                            <td><strong>Priority</strong></td>
+                            <td>
+                                <select id="priority" name="priority" class="form-control">
+
+                                    <option value="Low">Low</option>
+                                    <option value="Moderate">Moderate</option>
+                                    <option value="High">High</option>
+
+                                </select>
+                            </td>
+                        </tr>
+
+                        <!-- Status -->
+                        <tr>
+                            <td><strong>Status</strong></td>
+                            <td>
+                                <select id="status" name="status" class="form-control">
+                                    <option value="Open">Open</option>
+                                    <option value="In Progress">In Progress</option>
+                                    <option value="Completed">Completed</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Comment Box -->
+                <div class="comment-box-container mt-0 p-0 mb-10">
+                    <div class="d-flex align-items-center">
+                        <div class="profile-pic me-2" id="commentOwnerPic"></div>
+                        <input type="text" class="comment-box ms-2" placeholder="Write a comment...">
+                    </div>
+                </div>
+
+
+                <!-- Update Button -->
+                <button type="submit" class="btn btn-primary" style="margin-top: 70px; ">Update Task</button>
+            </form>
+        </div>
+
+
+
+    </div>
+
+</body>
+<script src="update.js"></script>
+
+</html>

@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Task Header (Dashboard Section) */
+.task-header {
+    background-color: #e6f2ff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.task-header h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.task-header small {
+    color: #6c757d;
+}
+
+.due-date, .status {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 100px;
+}
+
+/* Close Button on Left */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Task Owner Section */
+.task-owner {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff4d4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Task Details */
+.task-details {
+    background: white;
+    border-radius: 5px;
+}
+
+.task-details h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.task-details table td {
+    padding: 10px;
+}
+
+.task-details table td:first-child {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+/* Comment Box */
+.comment-box-container {
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.comment-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    text-align: lefts;
+    margin-left: 30px;
+    margin-top: 130px;
+    padding-top: 100px;
+}
+
+.edit-icon {
+  color: #333; /* Default color */
+  transition: color 0.3s ease-in-out;
+}
+
+.edit-icon:hover {
+  color: #007bff; /* Change to blue on hover */
+  cursor: pointer;
+}

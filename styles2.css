@@ -1,0 +1,70 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Modal Container */
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-content {
+  width: 60%;
+  max-width: 750px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Form Inputs */
+.form-control,
+.form-select {
+  border-radius: 4px;
+}
+
+/* Input Group */
+.input-group-text {
+  background: #eee;
+  border-left: none;
+}
+
+/* Footer Buttons */
+.modal-footer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
